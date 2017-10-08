@@ -1,10 +1,35 @@
 .header{
-    background-color: #161616;
+    background-color: #222222;
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     z-index: 20;
+}
+.logo{
+    margin-left: 4%;
+    margin-bottom: 1%;  
+}
+.tabs{
+    font-family: "Archivo";
+    color:#079bef;
+    padding-top: 2.5%;
+    padding-right: 0%;
+}
+.tab > a{ 
+    text-decoration: none;
+    font: bold 12px arial;
+    color: white; 
+}
+.tab > a:hover{
+    color:#079bef;
+    text-decoration: none;
+}
+.tab{
+    font-size: 14px;
+    padding-left: 1%;
+    border-right: 1px solid white;
+    text-align: center;
 }
 .carousel {
     height: 890px;
@@ -52,10 +77,11 @@ ol {
     position: relative;
     overflow: hidden;
     width: 100%;
+    height: 70%;
 }
 .carousel .item {
     height: 890px;
-    background-color: goldenrod;
+    background-color: gray;
 }
 .item >.active{
     height: 100%;
@@ -78,7 +104,7 @@ ol {
 .carousel-caption {
     z-index: 10;
     margin-bottom: 32%;
-    position: absolute;
+    vertical-align: top;
     padding-top: 20px;
     color: #fff;
     text-align: center;
@@ -86,69 +112,38 @@ ol {
 }
 .but {
     margin-top: 6%;
+    background-color: #0B2DEE;
 }
+/* .btn-lg{
+    background-color: #0B2DEE;
+    color: white;
+}
+.btn-lg:hover,
+.btn-lg:focus,
+.btn-lg:visited{
+    background-color: #031CAA;
+    color: white;
+} */
 .text-slide{
     font: bold 60px arial;
     color: white;
-} 
-@media screen and (min-width: 768px){
-   .carousel-caption {
-    left: 20%;
-    right: 20%;
-    padding-bottom: 10%;
-    }
-}
-@media (min-width: 1200px){
-    .container {
-    width: 1170px;
-    }
-}
-@media (min-width: 992px){
-    .container {
-    width: 970px;
-    }
-}
-@media (min-width: 768px){
-    .container {
-    width: 750px;
-    }
 }
 .container {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+} 
+.ul{
+    padding: 0;
+    margin: 0 0 10px 25px;
 }
-.logo{
-    margin-left: 4%;
-    margin-bottom: 1%;  
-}
-.tabs{
-    font-family: "Archivo";
-    color:#079bef;
-    padding-top: 2%;
-    padding-right: 1%;
-}
-.tab > a{ 
-    text-decoration: none;
-    font: bold 12px arial;
-    color: white; 
-}
-.tab > a:hover{
-    color:#079bef;
-    text-decoration: none;
-}
-.tab{
-    font-size: 14px;
-    padding-left: 1%;
-    border-right: 1px solid white;
-    text-align: center;
-}
+
 .name{
     font: bold 30px arial;
     color: #079bef;
     text-align: center;
-    margin-top: 2%;
+    margin-top: 3%;
     margin-bottom: 3%;
 }
 .form-actions{
@@ -161,9 +156,19 @@ ol {
     color: #079AEF;
     border-radius: none;
 }
+.teach{
+    vertical-align: top;
+    margin-top: -18%;
+}
 .teacher-name{
     font: bold 20px arial;
     padding-bottom: 10%;
+}
+.biography{
+    margin-left: 2%;
+}
+.photo{
+    margin-left: 5%;
 }
 .utterance{
     text-align: center;
@@ -173,21 +178,12 @@ ol {
     font: bold 480% arial;
     color: white;
 }
-.teach{
-    vertical-align: top;
-    margin-top: -18%;
-}
 .form{
     font: normal 18px arial;
     top: 10%;
     margin-right: 8%;
 }
-.biography{
-    margin-left: 2%;
-}
-.photo{
-    margin-left: 5%;
-}
+
 .style-name{
     font: bold 16px arial;
     text-align: center;
@@ -198,14 +194,14 @@ ol {
     margin-left: 6%;
 }
 .video{
-    height: 78%;
+    height: 74%;
     background-color: black;
     margin-top: 30px;
 }
 .all{
     border: 1px solid white;
     font: bold 20px arial;
-    margin-top: 25%;
+    margin-top: 24%;
     margin-left: -57%;
     text-align: center;
 }
@@ -214,7 +210,7 @@ ol {
 }
 .text_footer{
     font: bold 12px arial;
-    margin: 2%;
+    margin: 1%;
 }
 .span3{
     width: 23%;
@@ -222,12 +218,69 @@ ol {
     line-height: 1;
     margin-left: 0;
 }
-.carousel-inner {
-    position: relative;
-    height: 70%;
-    overflow: hidden;
+@media (min-width: 1200px){
+    .container {
+    width: 1170px;
+    }
 }
-.ul{
-    padding: 0;
-    margin: 0 0 10px 25px;
+@media (max-width: 992px){
+    .container {
+    width: 970px;
+    }
+    .text-slide {
+    font: bold 40px arial;
+    }
+    .carousel-caption {
+    margin-bottom: 46%;
+    }
+    .carousel-indicators {
+    margin-bottom: 20%;
+    }
+    .carousel {
+    height: 780px;
+    }
+    .carousel-control {
+    height: 617px;
+    }
+    .photo{
+    margin-left: 4%;
+    padding-left: 0;
+    }
+    .form{
+    font: normal 12px arial;
+    top: 5%;
+    margin-right: 0;
+    }
+    .teacher-name{
+    font: bold 14px arial;
+    padding-bottom: 5%;
+    }
+    .style{
+    margin-left: 8%;
+    }
+    .style-name{
+    margin-right: 200%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font: bold 14px arial;
+    }
+    .video{
+    height: auto;
+    }
+    .all{
+    margin-top: 64%;
+    
+    }
+}
+@media screen and (min-width: 768px){
+   .carousel-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 10%;
+    }
+}
+@media (min-width: 768px){
+    .container {
+    width: 750px;
+    }
 }
