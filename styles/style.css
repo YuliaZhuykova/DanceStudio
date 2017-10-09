@@ -194,7 +194,7 @@ ol {
     margin-left: 6%;
 }
 .video{
-    height: 74%;
+    height: auto;
     background-color: black;
     margin-top: 30px;
 }
@@ -204,6 +204,7 @@ ol {
     margin-top: 24%;
     margin-left: -57%;
     text-align: center;
+    margin-bottom: 20px;
 }
 .btn-dark{
     color: white;
