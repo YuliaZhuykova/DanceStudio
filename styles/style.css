@@ -257,6 +257,7 @@ ol {
     }
     .style{
     margin-left: 8%;
+    
     }
     .style-name{
     margin-right: 200%;
@@ -268,8 +269,9 @@ ol {
     height: auto;
     }
     .all{
-    margin-top: 64%;
-    
+    margin-left: 42%;
+    margin-top: 0;
+    margin-bottom: 2%;
     }
 }
 @media screen and (min-width: 768px){
